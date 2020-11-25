@@ -123,7 +123,11 @@ class FeedCard2 extends StatelessWidget {
                         Container(
                           padding: EdgeInsets.only(
                               right: 80.0),
-                          child:  userName,
+                          child:  Text('Saturday Eve night',style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0,
+                          ),),
                         ),
                         Container(
                           padding: EdgeInsets.only(
@@ -137,7 +141,7 @@ class FeedCard2 extends StatelessWidget {
                      children: [
                        Container(
                          padding: EdgeInsets.only(
-                             right: 20.0),
+                             right: 50.0),
                          child: Text('Save up to 50% off tickets',style: TextStyle(
                              color: Colors.red
                          ),
@@ -164,14 +168,27 @@ class FeedCard2 extends StatelessWidget {
          SizedBox(
            height: 1.0,
          ),
-
+         Divider(endIndent: 30,indent: 30,),
+         Column(
+           children: [
+             ListTile(
+               leading: Text('Barbeque Nation BBQ', style: TextStyle(
+                 color: Colors.black,
+                 fontWeight: FontWeight.bold,
+                 fontSize: 12.0,
+               ),
+               ),
+             )
+           ],
+         )
          // descriptionText
        ],
      ),
    );
 
     return Container(
-      height: 150.0,
+      height:200,
+
       width: MediaQuery.of(context).size.width,
       child: Stack(
         children: <Widget>[
@@ -182,7 +199,7 @@ class FeedCard2 extends StatelessWidget {
               borderRadius: BorderRadius.circular(14.0),
               child: Container(
                 padding: EdgeInsets.only(top: 5.0, left: 10.0),
-                height: 150.0,
+                height: double.infinity,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                   color: Colors.white,

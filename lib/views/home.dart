@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
     FeedsPage(),
     ChatsPage(),
     NotificationsPage(),
+    NotificationsPage(),
     ProfilePage()
   ];
 
@@ -37,16 +38,23 @@ class _HomePageState extends State<HomePage> {
       elevation: 0.0,
       items: [
         BottomNavigationBarItem(
-          icon: Icon(Icons.rss_feed),
+          icon: Icon(Icons.home),
           title: Text(
-            'Feed',
+            'Home',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
         BottomNavigationBarItem(
           icon: Icon(LineIcons.comments),
           title: Text(
-            'Chats',
+            'Chat',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.wine_bar),
+          title: Text(
+            'Create event',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
