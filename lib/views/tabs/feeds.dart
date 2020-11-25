@@ -111,7 +111,8 @@ class FeedsPage extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
-            child: Container(
+            child:
+            Container(
               color: Colors.grey.withOpacity(0.1),
               padding: EdgeInsets.only(top: 0.0),
               width: MediaQuery.of(context).size.width,

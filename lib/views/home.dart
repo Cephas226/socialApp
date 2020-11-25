@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_social/utils/colors.dart';
 import 'package:flutter_social/views/tabs/chats.dart';
+import 'package:flutter_social/views/tabs/createEvent.dart';
 import 'package:flutter_social/views/tabs/feeds.dart';
 import 'package:flutter_social/views/tabs/notifications.dart';
 import 'package:flutter_social/views/tabs/profile.dart';
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _pages = [
     FeedsPage(),
     ChatsPage(),
-    NotificationsPage(),
+    CreateEvent(),
     NotificationsPage(),
     ProfilePage()
   ];
