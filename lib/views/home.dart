@@ -7,6 +7,8 @@ import 'package:flutter_social/views/tabs/notifications.dart';
 import 'package:flutter_social/views/tabs/profile.dart';
 import 'package:line_icons/line_icons.dart';
 
+import 'categoryChoice.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();

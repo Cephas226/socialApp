@@ -188,7 +188,7 @@ class FeedsPage extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(right: 20.0),
+                margin: EdgeInsets.only(right: 30.0),
                 height: 50.0,
                 width: 60.0,
                 decoration: BoxDecoration(
@@ -203,14 +203,18 @@ class FeedsPage extends StatelessWidget {
             ],
           ),
         ),
-        Text(
-          firstName,
-          style: TextStyle(fontWeight: FontWeight.w600),
+        Center(
+          child: Text(
+            firstName,
+            style: TextStyle(fontWeight: FontWeight.w600),
+          ),
         ),
-        Text(
-          role,
-          style: TextStyle(fontWeight: FontWeight.w100),
-        )
+       Center(
+         child: Text(
+           role,
+           style: TextStyle(fontWeight: FontWeight.w100),
+         ),
+       )
       ],
     );
   }
